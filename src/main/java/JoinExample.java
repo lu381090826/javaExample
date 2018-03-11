@@ -1,3 +1,7 @@
+/**
+ * 并发 join
+ *
+ * */
 public class JoinExample
 {
     public static void main(String[] args) throws InterruptedException

@@ -10,6 +10,12 @@ import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.Transaction;
 
+
+
+/**
+ * redis lock
+ *
+ * */
 public class RedisSampleLock {
     private static final String redisHost = "127.0.0.1";
 

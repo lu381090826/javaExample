@@ -2,6 +2,7 @@
  *
  * @author Gavinlu
  * @date 2018/3/6
+ * 并发 join yield区别
  */
 public class YieldExample {
     public static void main(String[] args) {

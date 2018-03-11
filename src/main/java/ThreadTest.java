@@ -1,4 +1,7 @@
-public class Thread1 implements Runnable {
+/**
+ * runnable test
+ * */
+public class ThreadTest implements Runnable {
     @Override
     public void run() {
         synchronized(this) {
@@ -8,7 +11,7 @@ public class Thread1 implements Runnable {
         }
     }
     public static void main(String[] args) {
-        Thread1 t1 = new Thread1();
+        ThreadTest t1 = new ThreadTest();
         Thread ta = new Thread(t1, "A");
         Thread tb = new Thread(t1, "B");
         ta.start();
