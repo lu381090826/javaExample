@@ -1,5 +1,5 @@
 /**
- * runnable test
+ * runnable Test
  * */
 public class ThreadTest implements Runnable {
     @Override
