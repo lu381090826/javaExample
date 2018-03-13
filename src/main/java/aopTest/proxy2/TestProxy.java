@@ -1,7 +1,7 @@
-package proxy2;
+package aopTest.proxy2;
 
 
-import proxy2.impl.BookFacadeImpl;
+import aopTest.proxy2.impl.BookFacadeImpl;
 
 public class TestProxy {
 

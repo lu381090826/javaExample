@@ -1,6 +1,6 @@
-package proxy2.impl;
+package aopTest.proxy2.impl;
 
-import proxy2.BookFacade;
+import aopTest.proxy2.BookFacade;
 
 /**
  * Created by Gavinlu on 2018/3/9.

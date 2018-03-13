@@ -1,6 +1,6 @@
-package proxy;
+package aopTest.proxy;
 
-import proxy.impl.HelloWorldImpl;
+import aopTest.proxy.impl.HelloWorldImpl;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationHandler;

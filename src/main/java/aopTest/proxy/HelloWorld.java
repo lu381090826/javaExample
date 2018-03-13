@@ -1,4 +1,4 @@
-package proxy;
+package aopTest.proxy;
 /**
  * 动态代理
  */

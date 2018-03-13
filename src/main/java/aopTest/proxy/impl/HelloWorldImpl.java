@@ -1,6 +1,6 @@
-package proxy.impl;
+package aopTest.proxy.impl;
 
-import proxy.HelloWorld;
+import aopTest.proxy.HelloWorld;
 
 /**
  * Created by robin
