@@ -1,5 +1,6 @@
 package spring;
 
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import spring.aop.LogAspects;

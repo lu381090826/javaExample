@@ -13,6 +13,10 @@ public class ListExample {
 
         List<Integer> arrayList = new ArrayList<Integer>();
         arrayList.add(3);
-        System.out.print(arrayList.get(0));
+        arrayList.remove(0);
+        System.out.printf(":::::::"+String.valueOf(arrayList.size()));
+        List<Integer> vector = new Vector<>();
+        vector.add(3);
+//        System.out.print(arrayList.get(0));
     }
 }
