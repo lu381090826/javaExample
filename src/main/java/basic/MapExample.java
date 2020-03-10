@@ -10,7 +10,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MapExample {
     public static void main(String arg[]) {
         Map<String, String> hashMap = new HashMap<String, String>();
-        hashMap.put(null,null);
+//        hashMap.put("1","2");
+        String put = hashMap.put("1", "3");
+        System.out.printf(put);
         Map<String, String> treeMap = new TreeMap<String, String>();
         treeMap.put("11", "1");
         Set<String> treeSet = new TreeSet<>();
