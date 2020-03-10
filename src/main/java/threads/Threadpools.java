@@ -2,8 +2,10 @@ package threads;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class Threadpools {
+
     public static void main(String[] args) {
 
         //固定线程数的线程池，固定核心线程数，且等于非核心线程数
@@ -12,5 +14,7 @@ public class Threadpools {
         //动态可伸缩的线程池，核心线程数0
         ExecutorService service2 = Executors.newCachedThreadPool();
 
+        ExecutorService service3 = Executors.newSingleThreadExecutor();
+        ExecutorService service4 = Executors.newScheduledThreadPool(2);
     }
 }
