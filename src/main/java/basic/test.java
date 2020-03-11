@@ -2,9 +2,11 @@ package basic;
 
 import java.security.Policy;
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 //        Runnable runnable = () -> {
 //            try {
 //                Thread.sleep(10000);
@@ -33,5 +35,9 @@ public class test {
         threadPoolExecutor.execute(() -> {
         });
 
+        ReentrantLock reentrantLock = new ReentrantLock();
+        Condition condition =reentrantLock.newCondition();
+        condition.await();
+        condition.signalAll();
     }
 }

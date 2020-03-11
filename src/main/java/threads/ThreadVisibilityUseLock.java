@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ThreadVisibilityUseLock {
 
     private static boolean flag = true;
-    private static ReentrantLock lock = new ReentrantLock();
+    private static ReentrantLock lock = new ReentrantLock(true);
     public static void main(String[] args) throws InterruptedException {
         new Thread(() -> {
             while (flag) {
