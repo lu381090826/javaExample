@@ -6,7 +6,7 @@ import java.nio.channels.ServerSocketChannel;
 
 public class Test {
     public static void main(String[] args) throws IOException {
-        Selector.open();
-        ServerSocketChannel.open();
+       NioServer nioServer=new NioServer(10101);
+       nioServer.run();
     }
 }

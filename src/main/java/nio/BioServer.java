@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 /**
  * 传统Bio
  */
-public class bioServer {
+public class BioServer {
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(10101);
         ExecutorService newCachedThreadPool = Executors.newCachedThreadPool();
@@ -23,7 +23,6 @@ public class bioServer {
                 //读数据
                 handler(socket);
             });
-
         }
     }
 
