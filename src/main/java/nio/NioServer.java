@@ -122,7 +122,7 @@ public class NioServer implements Runnable {
                     readBuffer.get(bytes);
                     String body = new String(bytes, "UTF-8");
                     System.out.println("the time server receive order: " + body);
-                    String currenttime = "query time order".equals(body) ? new Date(System.currentTimeMillis()).toString(): "bad order";
+                    String currenttime = "query time order".equals(body) ? new Date(System.currentTimeMillis()).toString(): "---";
                     doWrite(sc, currenttime);
                 }else if(readBytes < 0){
                     key.channel();
