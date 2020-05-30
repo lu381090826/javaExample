@@ -1,7 +1,28 @@
 package threads;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
- * Created by Gavinlu on 2018/3/13.
+ *
+ * @author Gavinlu
+ * @date 2018/3/18
  */
 public class ThreadPoolExecutorTest {
+    public static void main(String[] args) {
+        ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
+        for (int i = 0; i < 10; i++) {
+            final int index = i;
+            try {
+                Thread.sleep(index * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            cachedThreadPool.execute(new Runnable() {
+                public void run() {
+                    System.out.println(index);
+                }
+            });
+        }
+    }
 }

@@ -7,16 +7,20 @@ import java.util.*;
  */
 public class ListExample {
     public static void main(String arg[]) {
+        int oldCapacity = 1;
+        System.out.print(oldCapacity >> 1);
+        System.out.print(oldCapacity >> 1);
+
         List<Integer> linkedList = new LinkedList<Integer>();
         linkedList.add(3);
-        System.out.print(linkedList.get(0));
+        linkedList.add(9);
+        System.out.print(linkedList.get(1));
 
         List<Integer> arrayList = new ArrayList<Integer>();
         arrayList.add(3);
-        arrayList.remove(0);
-        System.out.printf(":::::::"+String.valueOf(arrayList.size()));
-        List<Integer> vector = new Vector<>();
-        vector.add(3);
-//        System.out.print(arrayList.get(0));
+        arrayList.remove(3);
+        System.out.print(arrayList.get(0));
     }
+
+
 }
